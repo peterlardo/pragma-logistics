@@ -93,6 +93,10 @@ select {
   color: var(--accent);
 }
 
+.main-nav a.active {
+  color: var(--accent);
+}
+
 .menu-toggle {
   display: none;
   width: 42px;
@@ -240,6 +244,61 @@ select {
 
 .section {
   padding: 112px 0;
+}
+
+.page-hero {
+  padding: 156px 0 96px;
+  background: var(--white);
+}
+
+.page-hero h1 {
+  margin: 14px 0 0;
+  color: var(--primary);
+  font-size: clamp(42px, 5.2vw, 64px);
+  line-height: 1.06;
+  letter-spacing: 0;
+}
+
+.page-hero p {
+  max-width: 720px;
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.page-hero-image {
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(4, 25, 49, 0.82), rgba(6, 40, 74, 0.6)),
+    url("https://pragmalogistics.lovable.app/assets/hero-C02jiq3S.jpg") center/cover;
+}
+
+.page-hero-image h1,
+.page-hero-image p {
+  color: var(--white);
+}
+
+.page-hero-image p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.metiers-hero {
+  background:
+    linear-gradient(90deg, rgba(4, 25, 49, 0.82), rgba(6, 40, 74, 0.58)),
+    url("https://pragmalogistics.lovable.app/assets/logistics-BELM3pvp.jpg") center/cover;
+}
+
+.contact-hero {
+  background:
+    linear-gradient(90deg, rgba(4, 25, 49, 0.82), rgba(6, 40, 74, 0.58)),
+    url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
+
+.section-action {
+  margin: 36px 0 0;
 }
 
 .about,

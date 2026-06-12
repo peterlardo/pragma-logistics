@@ -1,9 +1,10 @@
 const header = document.querySelector("[data-header]");
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".main-nav");
+const isHomePage = Boolean(document.querySelector(".hero"));
 
 function syncHeader() {
-  header.classList.toggle("scrolled", window.scrollY > 64);
+  header.classList.toggle("scrolled", !isHomePage || window.scrollY > 64);
 }
 
 window.addEventListener("scroll", syncHeader, { passive: true });
@@ -21,6 +22,10 @@ nav.addEventListener("click", (event) => {
   }
 });
 
-document.querySelector(".contact-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-});
+const contactForm = document.querySelector(".contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
+}
