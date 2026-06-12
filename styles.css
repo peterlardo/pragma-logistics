@@ -301,6 +301,57 @@ select {
   margin: 36px 0 0;
 }
 
+.site-map-section {
+  background: var(--white);
+}
+
+.page-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.page-link-card {
+  min-height: 210px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(246, 248, 251, 0.88)),
+    url("https://pragmalogistics.lovable.app/assets/hero-C02jiq3S.jpg") center/cover;
+  box-shadow: 0 8px 28px rgba(16, 36, 59, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.page-link-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 195, 15, 0.55);
+  box-shadow: var(--shadow);
+}
+
+.page-link-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 22px;
+  border-radius: 10px;
+  color: #1c2f44;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  font-weight: 800;
+}
+
+.page-link-card h3 {
+  font-size: 21px;
+}
+
+.page-link-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
 .about,
 .method,
 .contact {
@@ -962,6 +1013,7 @@ select:focus {
   }
 
   .service-grid,
+  .page-link-grid,
   .why-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1003,6 +1055,7 @@ select:focus {
 
   .about-grid,
   .service-grid,
+  .page-link-grid,
   .why-grid,
   .steps,
   .project-grid,
