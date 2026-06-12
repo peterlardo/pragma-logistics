@@ -535,7 +535,7 @@ h3 {
   inset: 0;
   z-index: 0;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(246, 248, 251, 0.86)),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.76), rgba(246, 248, 251, 0.58)),
     var(--service-image) center/cover;
   transition: transform 0.35s ease, opacity 0.35s ease;
 }
@@ -545,7 +545,7 @@ h3 {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.96));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.78));
 }
 
 .service-card > * {
